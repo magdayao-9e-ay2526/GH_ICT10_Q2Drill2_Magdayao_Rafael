@@ -1,0 +1,222 @@
+
+/* Glee Club Design */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: #0e0e12;
+    background-image: url(https://img.magnific.com/free-vector/golden-musical-notes-with-audio-beat-cover-track_1017-53570.jpg?semt=ais_hybrid&w=740&q=80);
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header */
+header {
+    background: #8e0e27;
+    padding: 18px 20px;
+}
+
+.header-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h2 {
+    color: #ffcc33;
+    margin: 0;
+    font-size: 23px;
+}
+
+header p {
+    font-size: 12px;
+}
+
+/* Main */
+main {
+    width: 100%;
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 0 15px;
+    flex: 1;
+}
+
+/* Introduction */
+.intro {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    color: #ffcc33;
+    font-size: 12px;
+}
+
+.intro h1 {
+    color: #ffcc33;
+    font-size: 27px;
+    margin: 10px 0;
+}
+
+.intro span {
+    color: #cccccc;
+    font-size: 14px;
+}
+
+/* Form */
+.form-box {
+    background: #1b1b20;
+    border: 2px solid #ffcc33;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.form-box h2 {
+    color: #ffcc33;
+    font-size: 21px;
+    margin: 0;
+}
+
+.form-box p {
+    color: #bbbbbb;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.input-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+input {
+    width: 100%;
+    background: #1b1b20;
+    color: white;
+    border: 1px solid #555555;
+    border-radius: 25px;
+    padding: 13px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 1px solid #ffcc33;
+}
+
+/* Button */
+button {
+    width: 100%;
+    background: #e32828;
+    color: white;
+    padding: 13px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #bc1728;
+}
+
+/* Member Directory */
+.results-box {
+    background: #171c20;
+    border: 2px solid #00eaff;
+    border-radius: 13px;
+    padding: 20px;
+}
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.results-header h2 {
+    color: #00eaff;
+    font-size: 21px;
+}
+
+.results-header span {
+    color: #00eaff;
+    font-size: 12px;
+}
+
+/* Results */
+#results {
+    margin-top: 10px;
+}
+
+#results p {
+    font-size: 14px;
+}
+
+/* Member list box */
+.names {
+    background: #252b32;
+    color: white;
+    border-left: 5px solid #00eaff;
+    padding: 18px;
+    border-radius: 10px;
+    line-height: 1.7;
+    font-size: 16px;
+    overflow-wrap: anywhere;
+}
+
+/* Total members section */
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #4b555e;
+    padding-top: 25px;
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.total strong {
+    color: #00eaff;
+    font-size: 28px;
+}
+
+/* Footer */
+footer {
+    background: #8e0e27;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+    .input-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro h1 {
+        font-size: 23px;
+    }
+
+    .results-header {
+        gap: 10px;
+    }
+}
